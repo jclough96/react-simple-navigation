@@ -2,6 +2,8 @@
 
 React-Native-Simple-Navigation is designed to provide a simple interface for rendering components based on user determined variables.
 
+> This project is a work in progress. All contributions are welcome and feature requests also.
+
 ### Design Goals
 
 ---
