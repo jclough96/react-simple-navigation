@@ -1,29 +1,29 @@
 {
-  "name": "react-native-simple-navigation",
-  "version": "0.0.1",
-  "description": "A simple navigation router for React-Native",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jclough96/react-native-simple-navigation.git"
-  },
-  "keywords": [
-    "[react",
-    "react-native",
-    "navigation",
-    "navigator",
-    "router]"
-  ],
-  "author": "jclough96",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jclough96/react-native-simple-navigation/issues"
-  },
-  "homepage": "https://github.com/jclough96/react-native-simple-navigation#readme",
-  "dependencies": {
-    "react": "^16.8.6"
-  }
+	"name": "react-simple-navigation",
+	"version": "0.0.1",
+	"description": "A simple navigation router for React-Native",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jclough96/react-simple-navigation.git"
+	},
+	"keywords": [
+		"react",
+		"react-native",
+		"navigation",
+		"navigator",
+		"router"
+	],
+	"author": "jclough96",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jclough96/react-simple-navigation/issues"
+	},
+	"homepage": "https://github.com/jclough96/react-simple-navigation#readme",
+	"dependencies": {
+		"react": "^16.8.6"
+	}
 }
