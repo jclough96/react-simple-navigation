@@ -1,6 +1,6 @@
-# React-Native Simple Navigation
+# React Simple Navigation
 
-React-Native-Simple-Navigation is designed to provide a simple interface for rendering components based on user determined variables.
+React-Simple-Navigation is designed to provide a simple interface for rendering components based on user determined variables.
 
 > This project is a work in progress. All contributions are welcome and feature requests also.
 
@@ -10,7 +10,7 @@ React-Native-Simple-Navigation is designed to provide a simple interface for ren
 
 #### Simple
 
-React-Native-Simple-Navigation has it in the name. It is designed to be as simple as possible from the code base to integration and usage. With easy to use methods you can create a navigator which can handle route history, route switching, route pushing and 'go back' features.
+React-Simple-Navigation has it in the name. It is designed to be as simple as possible from the code base to integration and usage. With easy to use methods you can create a navigator which can handle route history, route switching, route pushing and 'go back' features.
 
 #### Customisable
 
