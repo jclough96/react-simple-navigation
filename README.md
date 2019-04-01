@@ -49,7 +49,7 @@ Then place the AppContainer in the render block of App.js.
 
 To use the navigation there are numerous properties available to you on `props.navigation`.
 
-`switchRoute` clears the history and changes to the routes passed.
-`pushRoute` adds a screen to the history and changes route.
-`goBack` uses the history to go back to the previous screen.
+`switchRoute` clears the history and changes to the routes passed,
+`pushRoute` adds a screen to the history and changes route,
+`goBack` uses the history to go back to the previous screen,
 `state` includes the current route name as `route`, `history`, and `params` which can be used to pass data to the routes being passed around.
