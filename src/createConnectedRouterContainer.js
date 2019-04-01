@@ -57,7 +57,7 @@ const createConnectedRouterContainer = (Routes, Options) => {
 		}
 
 		render() {
-			const ConnectedComponent = Routes[this.state.routes];
+			const ConnectedComponent = Routes[this.state.route];
 			return (
 				<ConnectedComponent
 					{...this.props}
