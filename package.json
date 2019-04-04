@@ -24,6 +24,7 @@
 	},
 	"homepage": "https://github.com/jclough96/react-simple-navigation#readme",
 	"dependencies": {
-		"react": "^16.8.6"
+		"react": "^16.8.6",
+		"react-native": "^0.59.3"
 	}
 }
