@@ -6,27 +6,29 @@ const createConnectedRouterContainer = (Routes, Options) => {
 			super(props);
 			this.state = {
 				route: '',
-				props: {},
+				params: {},
 				history: []
 			};
 			this.navigation = {
-				switchRoute: route => {
+				switchRoute: (route, params) => {
 					this.setState({
 						route: route,
-						history: [route]
+						history: [route],
+						params
 					});
 					return;
 				},
-				pushRoute: route => {
+				pushRoute: (route, params) => {
 					console.log('pushRoute');
 					this.setState({
 						route: route,
-						history: [...this.state.history, route]
+						history: [...this.state.history, route],
+						params
 					});
 
 					return;
 				},
-				goBack: () => {
+				goBack: params => {
 					if (this.state.history.length === 1) {
 						console.error('Navigation: Stack Is Empty');
 						return;
@@ -38,12 +40,13 @@ const createConnectedRouterContainer = (Routes, Options) => {
 					history.pop();
 					this.setState({
 						route: backRoute,
-						history: history
+						history: history,
+						params
 					});
 				},
 				state: {
 					route: this.state.route,
-					props: this.state.props,
+					params: this.state.params,
 					history: this.state.history
 				}
 			};
