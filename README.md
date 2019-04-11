@@ -2,7 +2,7 @@
 
 React Simple Navigation provides an easy to get started solution to navigation in react and react-native.
 
-> Version: 0.2.0
+> Version: 0.2.1
 > This is project is a work in progress and contributions/pull requests are welcome.
 
 ---
@@ -68,6 +68,8 @@ Well, Connected Router Component passes navigation functions and parameters to p
 `state.route` shows the current route.
 
 `goBack` returns to the previous route in the history array by removing the current route.
+
+A second parameter is available to pass parameters to the next route on the navigation props object.
 
 ---
 
