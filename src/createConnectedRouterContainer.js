@@ -6,24 +6,27 @@ const createConnectedRouterContainer = (Routes, Options) => {
 			super(props);
 			this.state = {
 				route: '',
-				params: {},
 				history: []
 			};
+			this.params = {};
 			this.navigation = {
 				switchRoute: (route, params) => {
+					this.params = params;
 					this.setState({
 						route: route,
-						history: [route],
-						params
+						history: [route]
 					});
 					return;
 				},
-				pushRoute: (route, params) => {
+				pushRoute: async (route, params) => {
 					console.log('pushRoute');
-					this.setState({
+
+					console.log('params', params);
+					this.params = params;
+					this.navigation.state.params = params;
+					await this.setState({
 						route: route,
-						history: [...this.state.history, route],
-						params
+						history: [...this.state.history, route]
 					});
 
 					return;
@@ -38,15 +41,15 @@ const createConnectedRouterContainer = (Routes, Options) => {
 					];
 					const history = this.state.history;
 					history.pop();
+					this.params = params;
 					this.setState({
 						route: backRoute,
-						history: history,
-						params
+						history: history
 					});
 				},
 				state: {
 					route: this.state.route,
-					params: this.state.params,
+					params: this.params,
 					history: this.state.history
 				}
 			};
@@ -55,7 +58,8 @@ const createConnectedRouterContainer = (Routes, Options) => {
 		componentWillMount() {
 			this.setState({
 				route: Options.initialRoute,
-				history: [...this.state.history, Options.initialRoute]
+				history: [...this.state.history, Options.initialRoute],
+				params: this.params
 			});
 		}
 
